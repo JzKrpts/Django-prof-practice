@@ -1,0 +1,14 @@
+services: 
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    environment:
+      - PYTHONBUFFERED=1
+    volumes:
+      # Mount your code so changes reflect instantly without rebuilding
+      - .:/hello-world-dock 
+      # Anonymous volume: protects the containers internal uv virtual environment
+      - /hello-world-dock/.venv

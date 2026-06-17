@@ -1,0 +1,44 @@
+# Django Specific
+__pycache__/
+*.py[cod]
+*$py.class
+media/
+static_root/
+/staticfiles/
+
+# Virtual Environments
+*.env
+.env
+!.env.example
+.venv/
+.env/
+venv/
+.virtualenvs/
+local_settings.py
+
+# OS & Tooling
+.DS_Store
+.mypy_cache/
+.ruff_cache/
+*.ruff_cache
+Thumbs.db
+.vscode/
+.idea/
+
+# Python build & Distributions
+*.egg-info/
+.installed.cfg
+*.egg
+build/
+dist/
+wheels/
+*.py[oc]
+
+# PostgreSQL & Data
+*.sql
+*.dump
+*.pgpass
+
+# Database Safety Net
+db.sqlite3
+*.sqlite3
